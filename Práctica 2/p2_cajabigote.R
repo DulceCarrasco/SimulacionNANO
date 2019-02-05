@@ -1,0 +1,16 @@
+p0<-c(8,6,9,10,9)
+p1<-c(8,6,9,9,9)
+p2<-c(7,8,8,7,10)
+p3<-c(9,8,5,8,9)
+p4<-c(6,10,8,8,9)
+p5<-c(3,7,7,8,6)
+p6<-c(5,8,7,8,8)
+p7<-c(5,7,8,6,9)
+p8<-c(3,9,6,8,10)
+p9<-c(4,7,6,7,7)
+p10<-c(6,9,9,8,10)
+
+  boxplot(p0,p1,p2,p3,p4,p5,p6,p7,p8,p9,p10)
+  iteraciones=rep(c("vive","muere"),each=0.1)
+  ggplot(data, aes(x=probabilidad, y=iteraciones) + 
+    geom_boxplot()
